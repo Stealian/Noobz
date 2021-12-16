@@ -2,15 +2,15 @@
 @import "mixin.scss";
 
 body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    background: $color-background;
-  }
-  * a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-  }
+  font-family: Arial, Helvetica, sans-serif;;
+  margin: 0;
+  background: $color-background;
+}
+* a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
 
 /* HEADER */
 .navbar {
@@ -23,7 +23,53 @@ body {
   padding: 0;
   @include flexbox-center;
   flex-direction: column;
+  
 }
 .baniere {
   @import "baniere.scss";
+}
+
+.centering>*{
+  box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 7rem;
+    /* max-width: 1440px; */
+    max-height: 70vh;
+    text-align: left;
+}
+.container>* {
+  max-width: 1040px;
+}
+
+.structure-title {
+  margin-bottom: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: $color-primary;
+}
+.structure-text {
+  padding: 0;
+  border: 0;
+  font-family: raleway,Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: 0;
+  background: transparent no-repeat top left;
+  h2 {
+    color: $color-tertiary;
+    font-weight: 600;
+  }
+  p {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 }
