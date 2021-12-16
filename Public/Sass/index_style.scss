@@ -1,0 +1,29 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background: $color-background;
+  }
+  * a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+/* HEADER */
+.navbar {
+  @import "navbar.scss";
+}
+
+/* MAIN */
+.main {
+  margin: 0;
+  padding: 0;
+  @include flexbox-center;
+  flex-direction: column;
+}
+.baniere {
+  @import "baniere.scss";
+}

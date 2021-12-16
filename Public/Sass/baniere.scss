@@ -1,0 +1,7 @@
+.baniere {
+    display: block;
+    &__image {
+        margin-top: 3rem;
+        object-fit: cover;
+    }
+}
