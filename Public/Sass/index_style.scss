@@ -25,19 +25,26 @@ body {
   flex-direction: column;
   
 }
-.baniere {
+.contain{
+  padding-top: 3rem;
+}  
+.baniere { 
   @import "baniere.scss";
 }
-
+#Presentation{
+  background: $color-bottom;
+  max-width: 80%;
+  margin-left: 9%;
+}
 .centering>*{
   box-sizing: border-box;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 7rem;
-    /* max-width: 1440px; */
-    max-height: 70vh;
-    text-align: left;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2rem;
+  /* max-width: 1440px; */
+  max-height: 70vh;
+  text-align: left;
 }
 .container>* {
   max-width: 1040px;
@@ -51,12 +58,16 @@ body {
   line-height: 1.2;
   letter-spacing: 0;
   color: $color-primary;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 .structure-text {
-  padding: 0;
   border: 0;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   font-family: raleway,Helvetica,Arial,sans-serif;
   font-size: 100%;
+  /*hyphens: auto;*/
   vertical-align: baseline;
   outline: 0;
   background: transparent no-repeat top left;
