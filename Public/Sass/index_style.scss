@@ -31,6 +31,54 @@ body {
 .baniere { 
   @import "baniere.scss";
 }
+
+/* Carousel Twitch*/
+#Twitch-caroussel{
+  margin-top: 3.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 95%;
+  height: 30em;
+  border: solid 4px #f39300;
+  box-shadow: 0 0 1em #f39300;
+  position: relative;
+}
+#Twitch-contcontainer{
+  margin-top: 3.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 95%;
+  height: 30em;
+}
+.bouton{
+  position: absolute;
+  width: 3em;
+  cursor:  pointer;
+  top: 40em;
+}
+#d{
+  left: 0;
+  opacity: 0.4;
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+  :hover{
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3 ease;
+  }
+}
+#g{
+  right: 0;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  transition: all 0.3 ease;
+  :hover{
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3 ease;
+  }
+}
+
 #Presentation{
   background: $color-bottom;
   max-width: 80%;

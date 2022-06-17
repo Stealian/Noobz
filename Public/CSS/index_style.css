@@ -22,9 +22,11 @@ body {
   width: 100%;
   height: 3rem;
 }
+
 .navbar li {
   float: left;
 }
+
 .navbar li a {
   display: block;
   color: black;
@@ -32,10 +34,12 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .navbar li:hover:not(.active) {
   background-color: #f6ad05;
   height: 3rem;
 }
+
 .navbar .active {
   background-color: #f6ad05;
   height: 3rem;
@@ -45,10 +49,19 @@ body {
 .main {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contain {
@@ -58,10 +71,74 @@ body {
 .baniere .baniere {
   display: block;
 }
+
 .baniere .baniere__image {
   margin-top: 3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+}
+
+/* Carousel Twitch*/
+#Twitch-caroussel {
+  margin-top: 3.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 95%;
+  height: 30em;
+  border: solid 4px #f39300;
+  -webkit-box-shadow: 0 0 1em #f39300;
+          box-shadow: 0 0 1em #f39300;
+  position: relative;
+}
+
+#Twitch-contcontainer {
+  margin-top: 3.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 95%;
+  height: 30em;
+}
+
+.bouton {
+  position: absolute;
+  width: 3em;
+  cursor: pointer;
+  top: 40em;
+}
+
+#d {
+  left: 0;
+  opacity: 0.4;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+#d :hover {
+  -webkit-transform: rotate(0deg) scale(1.1);
+          transform: rotate(0deg) scale(1.1);
+  opacity: 1;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+#g {
+  right: 0;
+  opacity: 0.4;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+#g :hover {
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
+  opacity: 1;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 
 #Presentation {
@@ -71,7 +148,8 @@ body {
 }
 
 .centering > * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -101,22 +179,29 @@ body {
   border: 0;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-family: raleway, Helvetica, Arial, sans-serif;
+  font-family: raleway,Helvetica,Arial,sans-serif;
   font-size: 100%;
   /*hyphens: auto;*/
   vertical-align: baseline;
   outline: 0;
   background: transparent no-repeat top left;
 }
+
 .structure-text h2 {
   color: #f6ad05;
   font-weight: 600;
 }
+
 .structure-text p {
   color: white;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
+/*# sourceMappingURL=index_style.css.map */
